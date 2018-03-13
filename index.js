@@ -4,7 +4,7 @@ const app = express();
 
 
 app.get('/', function( req, res){
-    res.render(__dirname+'/views/index.pug', {title: 'Hey', message: 'Hello there!'});
+    res.sendFile(__dirname+'/views/home.html');
 });
 
 app.listen(3000);
